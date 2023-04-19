@@ -13,7 +13,7 @@ namespace Quiz6 {
         GetterSetter1 getterSetter1 = new GetterSetter1();
         GetterSetter2 getterSetter2 = new GetterSetter2();
         GetterSetter3 getterSetter3 = new GetterSetter3();
-        Indexer1 indexer1;
+        Indexer1 indexer1 = new Indexer1();
         int indexer1Index = 0;
 
         public Form1() {
@@ -83,12 +83,15 @@ namespace Quiz6 {
         }
 
         private void indexer1Btn_Click(object sender, EventArgs e) {
-            indexer1 = new Indexer1(
-                indexer1Input.Text.Split() /// Length == 5 !!!
-                .Select(Int32.Parse)
-                .ToArray()
-            );
-            // indexer1 = new Indexer1(); /// RNG Version (Without User Input)
+            /// Input Version
+            // int[] input = indexer1Input.Text.Split() /// Length == 5 !!!
+            //     .Select(Int32.Parse)
+            //     .ToArray();
+            // for (int i = 0; i < input.Length; i++) { indexer1[i] = input[i]; }
+
+            /// Random Version
+            Random rng = new Random();
+            for (int i = 0; i < 5; i++) { indexer1[i] = rng.Next(1001); }
         }
 
         private void indexer1NextBtn_Click(object sender, EventArgs e) {

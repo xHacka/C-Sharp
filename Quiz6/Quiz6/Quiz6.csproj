@@ -56,6 +56,8 @@
     <Compile Include="GetterSetter2.cs" />
     <Compile Include="GetterSetter3.cs" />
     <Compile Include="Indexer1.cs" />
+    <Compile Include="Indexer2.cs" />
+    <Compile Include="Indexer3.cs" />
     <Compile Include="Klasi_1.cs" />
     <Compile Include="Klasi_2.cs" />
     <Compile Include="Martkutxedi.cs" />

@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Quiz6 {
-    internal class Indexer1 {
-        private int[] array = new int[5];
- 
-        public int this[int index] {
+    internal class Indexer4 {
+        private String[] array = new String[5];
+
+        public String this[int index] {
             get { return array[index]; }  // or // get => array[index];
             set { array[index] = value; } // or // set => array[index] = value;
         }
